@@ -13,7 +13,7 @@ const Header = () => {
   };
 
   return (
-    <div className="sticky top-0 bg-gradient-to-b from-white to-transparent z-100 w-full ">
+    <div className="sticky top-0  z-10 bg-white w-full ">
       <header id="page-header" className="flex flex-none items-center py-4">
         <div className='flex  text-center flex-row items-center justify-between  md:space-y-0 container xl:max-w-7xl mx-auto px-4'>
           <div>
