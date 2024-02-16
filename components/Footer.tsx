@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <>
       {/* Footer */}
-      <div className="w-full ">
+      <div className="w-full">
           <div id="footer" className="w-full">
           {/* Signup For Newsletter Section Of Footer */}
           <div className="w-full flex flex-col md:flex-row">

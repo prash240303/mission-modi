@@ -1,13 +1,8 @@
-import Image from "next/image";
-import Gallery from "./gallery/page";
 import MainLayout from "./Layout/MainLayout";
-import AboutUs from "./about-us/page";
-import ContactUs from "./contact-us/page";
-import News from "./news/page";
-import { Carousel } from "@/components/ui/carousel";
-import { CarouselUI } from "../components/Home/careusel";
+import { CarouselUI } from "../components/Home/carousel";
 import Marquee from "@/components/Home/marquee";
-
+import AboutSection from "@/components/Home/about";
+import Banner from "@/components/Home/banner";
 
 export default function Home() {
   return (
@@ -15,6 +10,8 @@ export default function Home() {
       <MainLayout>
         <CarouselUI />
         <Marquee />
+        <AboutSection/>
+       <Banner/> 
       </MainLayout>
     </main>
 

@@ -18,6 +18,10 @@ const config: Config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        serif: ['"Brygada 1918"', 'serif'],
+      },
       colors: {
         transparent: 'transparent',
         'white-15': 'rgba(255, 255, 255, 0.15)',
