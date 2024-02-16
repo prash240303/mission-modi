@@ -6,13 +6,15 @@ import ContactUs from "./contact-us/page";
 import News from "./news/page";
 import { Carousel } from "@/components/ui/carousel";
 import { CarouselUI } from "../components/Home/careusel";
+import Marquee from "@/components/Home/marquee";
 
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center gap-3 ">
       <MainLayout>
-       <CarouselUI/>
+        <CarouselUI />
+        <Marquee />
       </MainLayout>
     </main>
 
