@@ -15,15 +15,15 @@ import Image from "next/image"
 
 const ImagePaths = [
   {
-    src: "/temp.jpg",
+    src: "/images/temp.jpg",
     alt: "Image 1"
   },
   {
-    src: "/temp.jpg",
+    src: "/images/temp.jpg",
     alt: "Image 2"
   },
   {
-    src: "/temp.jpg",
+    src: "/images/temp.jpg",
     alt: "Image 3"
   },
 
