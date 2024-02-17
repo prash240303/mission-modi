@@ -2,6 +2,7 @@ import exp from "constants";
 import Image from "next/image";
 import HeadingTitle from "../HeadingTitle";
 
+
 const AboutSection = () => {
   return (
     <section className="relative w-full">
