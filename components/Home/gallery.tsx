@@ -8,7 +8,7 @@ const Gallery = () => {
       <HeadingTitle title="Gallery" className="text-center mx-auto" />
 
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:px-6 px-2 mt-6">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:px-6 px-4 mt-6">
         <div className="grid gap-4">
           <div>
             <Image width={500} height={500} className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="" />
