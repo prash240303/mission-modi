@@ -10,16 +10,16 @@ export default function Footer() {
           {/* Signup For Newsletter Section Of Footer */}
           <div className="w-full flex flex-col md:flex-row">
             <div className="flex flex-col  basis-3/5    gap-4 md:p-10 py-8 px-4">
-              <div className="md:text-2xl text-xl  text-wrap">
+              <div className="md:text-2xl text-xl font-bold  text-wrap">
                 Sign Up for our newsletter
               </div>
               <div className="md:text-xl text-lg">
               Cheer up as we work regularly to make people believe again in the good of humanity. 
               </div>
             </div>
-            <div className="flex basis-2/5 flex-row   md:p-10 px-8  pb-4  items-center justify-around">
+            <div className="flex basis-2/5 flex-row md:p-10 px-8 pb-4 gap-2 items-center justify-around">
               <input className="rounded-xl h-7/12 w-7/12 p-3 text-black border border-gray-400" type="text" placeholder="Enter your email" />
-              <button className="bg-jse-primary-500 md:p-4 p-3 h-7/12 w-4/12 rounded-xl">Notify Me</button>
+              <button className="bg-jse-primary-600 text-white  p-3 h-7/12 md:w-4/12 w-6/12 md:text-base text-sm font-semibold rounded-xl">Notify Me</button>
             </div>
             
           </div>
