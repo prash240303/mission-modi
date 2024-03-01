@@ -15,11 +15,11 @@ import Image from "next/image"
 
 const ImagePaths = [
   {
-    src: "/images/temp.jpg",
+    src: "/images/careusal1.png",
     alt: "Image 1"
   },
   {
-    src: "/images/temp.jpg",
+    src: "/images/careusal2.png",
     alt: "Image 2"
   },
   {
@@ -50,8 +50,8 @@ export function CarouselUI() {
         {ImagePaths.map((item, index) => (
           <CarouselItem key={index}>
             <div className="w-full" >
-                  {/* <span className="text-4xl font-semibold">{index + 1} { item.alt} {item.src} </span> */}
-                  <Image src={item.src} className="w-full object-fill h-screen" alt={item.alt} width={500} height={500} />
+              {/* <span className="text-4xl font-semibold">{index + 1} { item.alt} {item.src} </span> */}
+              <Image src={item.src} className="w-full object-fill h-screen" alt={item.alt} width={2000} height={2000} />
             </div>
           </CarouselItem>
         ))}

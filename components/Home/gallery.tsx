@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Gallery = () => {
   return (
-    <div className="flex flex-col items-center gap-3">
+    <div className="flex my-6 flex-col items-center gap-3">
       <HeadingTitle title="Gallery" className="text-center mx-auto" />
 
 
@@ -56,7 +56,7 @@ const Gallery = () => {
       </div>
       <div className='md:mt-12 mt-6 md:flex items-center justify-center w-fit mx-auto space-x-2'>
         <Link
-          href="/gallery"
+          href="/gallery" 
           className="w-full bg-jse-primary-600 text-white font-semibold rounded-lg py-2 px-4 hover:bg-jse-primary-400 focus:outline-none focus:ring focus:ring-jse-primary-300 focus:ring-opacity-50 active:bg-jse-primary-400"
         >
           Show more

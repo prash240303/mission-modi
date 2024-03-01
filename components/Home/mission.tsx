@@ -8,7 +8,7 @@ const Mission = () => {
     <section className="relative w-full">
       <div className="relative w-full overflow-hidden ">
         <div className="absolute w-full overflow-hidden inset-0 z-0">
-          <Image src="/images/temp.jpg" alt="About" layout="fill" objectFit="cover" />
+          <Image src="/images/aboutbg.png" alt="About" layout="fill" objectFit="cover" />
         </div>
         <div className="relative flex md:flex-row flex-col md:gap-2 gap-6 items-center justify-center px-6  bg-black bg-opacity-50 md:pl-12 pl-4   py-12  ">
           <div className="text-white w-full  pr-4 md:text-base text-sm md:w-2/5">
