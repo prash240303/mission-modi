@@ -18,7 +18,7 @@ const NewsCard = ({
   location,
 }: Props) => {
   return (
-    <div className=" w-full flex flex-col items-center bg-white rounded-lg ring-1 ring-jse-neutral-300 overflow-hidden shadow-sm">
+    <div className=" w-[350px] flex-shrink-0 flex flex-col items-center bg-white rounded-lg ring-1 ring-jse-neutral-300 overflow-hidden shadow-sm">
       <Link href="#" className="block relative group w-full">
         <div className="flex items-center justify-center absolute inset-0 bg-jse-primary-400 bg-opacity-75 opacity-0 transition ease-out duration-150 group-hover:opacity-100">
           <svg
