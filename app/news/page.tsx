@@ -68,26 +68,12 @@ export default function News() {
 
   return (
     <MainLayout>
-      <h1>News</h1>
-      <p>Welcome to the news page!</p>
-      <div className="flex flex-col items-center gap-6 my-12 px-12">
+
+      <div className="flex flex-col items-start gap-6 my-12 px-12">
         <HeadingTitle title="Mission Modi Latest News" className="text-center mx-auto" />
-        {/* <div className="flex flex-col gap-4 items-start justify-center my-6">
-          <h2 className="font-semibold text-2xl">Latest News</h2>
-          <div className="overflow-x-scroll w-[90vw] gap-4 flex">
-              {newsData.map((news, index) => (
-                <NewsCard 
-                  key={index}
-                  imglink={news.imglink} 
-                  heading={news.heading} 
-                  date={sampleDate} 
-                  desc={news.desc} 
-                  location={news.location} 
-                />
-              ))}
-          </div>
-        </div> */}
-      
+        
+        <HeadingTitle title="Latest News" />
+
         <Carousel
           plugins={[plugin.current]}
           opts={{
@@ -142,11 +128,68 @@ export default function News() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="absolute left-6 top-1/2" />
-          <CarouselNext className="absolute right-6 top-1/2" />
+          <CarouselPrevious className="absolute bg-gray-900 text-white left-6 top-1/2" />
+          <CarouselNext className="absolute  bg-gray-900 text-white right-6 top-1/2" />
         </Carousel>
- 
 
+        <HeadingTitle title="Trending News" />
+        <Carousel
+          plugins={[plugin.current]}
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full"
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
+        >
+          <CarouselContent className="w-screen h-full p-2">
+            {newsData.map((item, index) => (
+              <CarouselItem key={index}>
+                <div className="w-full flex gap-4">
+                  <NewsCard
+                    key={index}
+                    imglink={item.imglink}
+                    heading={item.heading}
+                    date={sampleDate}
+                    desc={item.desc}
+                    location={item.location}
+                  // Add other props for the NewsCard component
+                  />
+                  <NewsCard
+                    key={index}
+                    imglink={item.imglink}
+                    heading={item.heading}
+                    date={sampleDate}
+                    desc={item.desc}
+                    location={item.location}
+                  // Add other props for the NewsCard component
+                  />
+                  <NewsCard
+                    key={index}
+                    imglink={item.imglink}
+                    heading={item.heading}
+                    date={sampleDate}
+                    desc={item.desc}
+                    location={item.location}
+                  // Add other props for the NewsCard component
+                  />
+                  <NewsCard
+                    key={index}
+                    imglink={item.imglink}
+                    heading={item.heading}
+                    date={sampleDate}
+                    desc={item.desc}
+                    location={item.location}
+                  // Add other props for the NewsCard component
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="absolute bg-gray-900 text-white left-6 top-1/2" />
+          <CarouselNext className="absolute  bg-gray-900 text-white right-6 top-1/2" />
+        </Carousel>
 
       </div>
     </MainLayout>
